@@ -18,7 +18,7 @@ class CommandGeneratorSpec extends ObjectBehavior {
         $this->shouldHaveType('Acme\Console\CommandGenerator');
     }
 
-    function it_generates_a_command_clas(Filesystem $file, Mustache_Engine $mustache)
+    function it_generates_a_command_class(Filesystem $file, Mustache_Engine $mustache)
     {
         $input = new CommandInput('SomeCommand', 'Acme\Bar', ['name', 'email'], '$name, $email');
         $template = 'foo.stub';
