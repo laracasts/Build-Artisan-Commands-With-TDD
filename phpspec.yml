@@ -1,0 +1,3 @@
+suites:
+    acme_suite:
+        src_path: app
